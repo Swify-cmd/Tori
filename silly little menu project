@@ -1,0 +1,55 @@
+# This is the first version of my project, after im done with it I will look for a way to make it more efficient
+
+import time
+pizza = ['pizza', 22]
+shawarma = ['shawarma', 12]
+burger = ['burger', 15]
+
+menu = [pizza[0], shawarma[0], burger[0]]
+menu_price = [pizza[1], shawarma [1], burger[1]]
+
+menu_search = input(f"What would you like to order?: ({', '.join(menu)} ) ")
+
+if menu_search == 'pizza':
+    print("Great choice!")
+    time.sleep(1)
+    print(f"Your order would be: {pizza[1]}$")
+    time.sleep(1)
+    confirmation = input("Type: (Confirm) if you would like to confirm your order")
+    backtomenu = input("Type: (Back) if you would like to go back to the menu")
+
+    if confirmation == "Confirm":
+        print("Your order has been confirmed!")
+        print("Your order will be delivered in 30 minutes!")
+    elif backtomenu == "Back":
+        print("Going back to the menu...")
+        time.sleep(1)
+        menu_search = input(f"What would you like to order?: ({', '.join(menu)} ) ")
+        if menu_search == 'shawarma':
+            print("Great choice!")
+            time.sleep(1)
+            print(f"Your order would be: {shawarma[1]}$")
+            time.sleep(1)
+            confirmation = input("Type: (Confirm) if you would like to confirm your order")
+            backtomenu = input("Type: (Back) if you would like to go back to the menu")
+            if confirmation == "Confirm":
+                print("Your order has been confirmed!")
+                print("Your order will be delivered in 30 minutes!")
+            elif backtomenu == "Back":
+                print("Going back to the menu...")
+                time.sleep(1)
+                menu_search = input(f"What would you like to order?: ({', '.join(menu)}) ")
+                if menu_search == 'burger':
+                    print("Great choice!")
+                    time.sleep(1)
+                    print(f"Your order would be: {burger[1]}$")
+                    time.sleep(1)
+                    confirmation = input("Type: (Confirm) if you would like to confirm your order")
+                    backtomenu = input("Type: (Back) if you would like to go back to the menu")
+                    if confirmation == "Confirm":
+                        print("Your order has been confirmed!")
+                        print("Your order will be delivered in 30 minutes!")
+                    elif backtomenu == "Back":
+                        print("Going back to the menu...")
+                        time.sleep(1)
+                        menu_search = input(f"What would you like to order?: ({', '.join(menu)} ) ")
