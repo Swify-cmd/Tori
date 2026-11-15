@@ -1,6 +1,201 @@
-# This is the first version of my project, after im done with it I will look for a way to make it more efficient
 
-import time
+
+'''          inputs stuff
+name = input("What's your name: ")
+
+print("Nice to have you here, "+name)
+
+age = int(input("How old are you: "))
+
+print("You are "+str(age)+" years old!")
+
+height = float(input("How tall are you: "))
+
+print("Not tall enough, you are gay..")
+
+
+
+         slice, index stuff
+website = "https://roblox.com"
+
+slice = slice(8,-4)
+
+print(website[slice].capitalize())
+
+
+
+         if statements stuff
+age = int(input("How old are you?: "))
+if age >= 18:
+    print("You are an adult!")
+else:
+     print("You are not an adult!")
+     int(input("How old are you?: "))
+
+
+       while loops
+name = ""
+
+while len(name) == 0:
+    name = input("What's your name?: ")
+    
+print("Hello "+name)'''
+
+
+
+'''import time 
+
+name = input("What's your name?: ")
+
+if name == "Ahmed":
+    print("?!")
+    time.sleep(1)
+    print("OMG I LOVE YOUR NAME")
+    time.sleep(0.5)
+    print("CAN WE BE FRIENDS?")
+    time.sleep(0.3)
+    answer = input("Yes! | No!: ").lower()  # Convert input to lowercase
+    if answer == "Yes!" or answer == "yes" or answer == "Yes" or answer == "yes!" or answer == "YES!" or answer == "YES":
+        print("YAY!")
+    elif answer == "No!" or answer == "no" or answer == "No" or answer == "no!" or answer == "NO!" or answer == "NO":
+        print("You're done lil bro...")
+
+elif name == "":
+    print("...")
+    time.sleep(1)
+    print("Bro? what's your name??")
+    time.sleep(1)
+    name = input("What's your name?: ")
+    if name == "Ahmed":
+        print("?!")
+        time.sleep(1)
+        print("OMG I LOVE YOUR NAME")
+        time.sleep(0.5)
+        print("CAN WE BE FRIENDS?")
+        time.sleep(0.3)
+        answer = input("Yes! | No!: ").lower()  # Convert input to lowercase
+        if answer == "Yes!" or answer == "yes" or answer == "Yes" or answer == "yes!" or answer == "YES!" or answer == "YES":
+            print("YAY!")
+        elif answer == "No!" or answer == "no" or answer == "No" or answer == "no!" or answer == "NO!" or answer == "NO":
+            print("You're done lil bro...")
+    else:
+        print("Nice to meet you! " + name)'''
+
+
+#import time
+
+#pname = input("Product name: ")
+#ptype = input("Product type: ")
+#pprice = float(input("Product price: "))
+
+#discount = pprice*0.1
+#discount1 = pprice*0.3
+#discount2 = pprice*0.2
+
+
+#time.sleep(0.6)
+#print("Product name: "+pname)
+#time.sleep(0.5)
+#print("Product type: "+ptype)
+#time.sleep(0.7)
+#print("Product price: "+str(pprice))
+
+
+#if pprice > 150:
+#    tprice = pprice - discount1
+
+#elif pprice < 150:
+ #   tprice = pprice - discount2
+#else:
+#    tprice = pprice - discount
+
+#time.sleep(0.9)
+#print("Total price: "+str(tprice))
+
+
+
+'''rows = int(input("How many rows: "))
+columns = int(input("How many columns: "))
+symbol = input("Enter a symbol: ")
+
+for i in range(rows):
+    for j in range(columns):
+        print(symbol, end="")
+    print()'''
+
+'''while True:
+    name = input("ur name is what: ")
+    if name != "":
+        break'''
+
+'''jawal = "1-2-3-4-5-6-2-2"
+
+for i in jawal:
+    if i == "-":
+        continue
+    print(i, end="")'''
+
+# idek what this is
+
+'''food = ["shawarma","pizza","ms7b"]
+
+food.remove(food[1])
+
+for x in food:
+    print(food, end="")
+    break
+
+def print_numbers():
+    print(1)
+    print(2)
+    print(3)
+
+print_numbers()'''
+
+# a project from satr
+
+'''number_holder = {
+    'Amal': '1111111111',
+    'Mohammed': '2222222222',
+    'Khadijah': '3333333333',
+    'Abdullah': '4444444444',
+    'Rawan': '5555555555',
+    'Faisal': '6666666666',
+    'Layla': '7777777777'
+}
+
+name_or_number = input("Enter the name or the number: ")
+
+
+if name_or_number.isdigit():
+    for name, number in number_holder.items():
+        if number == name_or_number:  
+            print(f"The name belonging to the number {name_or_number} is {name}.")
+            break  
+    else:
+        print(f"Sorry, the number {name_or_number} is not found in the phone book.")
+else:
+    if name_or_number in number_holder:
+        print(f"The phone number is: {number_holder[name_or_number]}")
+    else:
+        print(f"Sorry, the name {name_or_number} is not found in the phone book.")'''
+
+# failed birthday project
+
+'''import datetime
+
+name = input("Enter your name: ")
+date.str = input("Enter your birthday: ")
+
+
+
+def birthday(name, date):
+    print(name+" is "+  +date)
+
+birthday(name, date)'''
+
+#     a little project
+"""import time
 pizza = ['pizza', 22]
 shawarma = ['shawarma', 12]
 burger = ['burger', 15]
@@ -52,4 +247,28 @@ if menu_search == 'pizza':
                     elif backtomenu == "Back":
                         print("Going back to the menu...")
                         time.sleep(1)
-                        menu_search = input(f"What would you like to order?: ({', '.join(menu)} ) ")
+                        menu_search = input(f"What would you like to order?: ({', '.join(menu)} ) ")"""
+                        
+#  upgraded version of the little project
+    
+'''import time
+
+menu = {
+    'pizza': 22,
+    'shawarma': 12,
+    'burger': 15
+}
+
+while True:
+    menu_search = input(f"What would you like to order?: ").strip().lower()'''
+
+
+# conditional expressions:
+
+'''user_role = "admin"
+access_level = "Full access" if user_role == "admin" else "Limited Access"
+
+print(access_level) '''
+
+
+
