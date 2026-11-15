@@ -251,24 +251,57 @@ if menu_search == 'pizza':
                         
 #  upgraded version of the little project
     
-'''import time
+# import time
 
-menu = {
-    'pizza': 22,
-    'shawarma': 12,
-    'burger': 15
-}
+# menu = {
+#     'pizza': 22,
+#     'shawarma': 12,
+#     'burger': 15
+# }
 
-while True:
-    menu_search = input(f"What would you like to order?: ").strip().lower()'''
+# while True:
+#     menu_search = input(f"What would you like to order?: ").strip().lower()
+
+#     if menu_search not in menu:
+#         print(f"{menu_search} is an invalid order... try again")
+#         continue
+
+#     print(f"Your order will be {menu_search} ${menu[menu_search]} ")
+#     confirmation = input("Type (Confirm) to confirm or (Back) to go back to the menu: ").strip().lower()
+
+#     if confirmation == "confirm":
+#         print("Your order will be delivered in 21 minutes!")
+#         break
+
+#     elif confirmation == "back":
+#         print("Going back to the menu...")
+#         continue
+    
+#     else:
+#         print(f"{confirmation} is not a valid input")
+
+
 
 
 # conditional expressions:
 
-'''user_role = "admin"
-access_level = "Full access" if user_role == "admin" else "Limited Access"
+# user_role = "admin"
+# access_level = "Full access" if user_role == "admin" else "Limited Access"
 
-print(access_level) '''
+# print(access_level)
 
 
+# name = input("What's your name?: ")
+
+# while name == "":
+#     print("Invalid.")
+#     name = input("What's your name?: ")
+
+# zesty = True
+# print(f"Is the person zesty?: {zesty}")
+# while zesty:
+#     print("NO!")
+#     zesty = False
+
+# print(f"Is the person zesty?: {zesty}")
 
