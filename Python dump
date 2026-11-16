@@ -1,6 +1,6 @@
 
 
-'''          inputs shit
+'''          inputs stuff
 name = input("What's your name: ")
 
 print("Nice to have you here, "+name)
@@ -15,7 +15,7 @@ print("Not tall enough, you are gay..")
 
 
 
-         slice, index shit
+         slice, index stuff
 website = "https://roblox.com"
 
 slice = slice(8,-4)
@@ -24,7 +24,7 @@ print(website[slice].capitalize())
 
 
 
-         if statements shit
+         if statements stuff
 age = int(input("How old are you?: "))
 if age >= 18:
     print("You are an adult!")
@@ -112,6 +112,8 @@ elif name == "":
 #time.sleep(0.9)
 #print("Total price: "+str(tprice))
 
+
+
 '''rows = int(input("How many rows: "))
 columns = int(input("How many columns: "))
 symbol = input("Enter a symbol: ")
@@ -133,21 +135,24 @@ for i in jawal:
         continue
     print(i, end="")'''
 
-#food = ["shawarma","pizza","ms7b"]
+# idek what this is
 
-#food.remove(food[1])
+'''food = ["shawarma","pizza","ms7b"]
 
-#for x in food:
-#    print(food, end="")
-#    break
+food.remove(food[1])
 
-#def print_numbers():
-   # print(1)
-   # print(2)
-    #print(3)
+for x in food:
+    print(food, end="")
+    break
 
-#print_numbers()
+def print_numbers():
+    print(1)
+    print(2)
+    print(3)
 
+print_numbers()'''
+
+# a project from satr
 
 '''number_holder = {
     'Amal': '1111111111',
@@ -175,8 +180,9 @@ else:
     else:
         print(f"Sorry, the name {name_or_number} is not found in the phone book.")'''
 
+# failed birthday project
 
-import datetime
+'''import datetime
 
 name = input("Enter your name: ")
 date.str = input("Enter your birthday: ")
@@ -186,6 +192,133 @@ date.str = input("Enter your birthday: ")
 def birthday(name, date):
     print(name+" is "+  +date)
 
-birthday(name, date)
+birthday(name, date)'''
 
+#     a little project
+"""import time
+pizza = ['pizza', 22]
+shawarma = ['shawarma', 12]
+burger = ['burger', 15]
+
+menu = [pizza[0], shawarma[0], burger[0]]
+menu_price = [pizza[1], shawarma [1], burger[1]]
+
+menu_search = input(f"What would you like to order?: ({', '.join(menu)} ) ")
+
+if menu_search == 'pizza':
+    print("Great choice!")
+    time.sleep(1)
+    print(f"Your order would be: {pizza[1]}$")
+    time.sleep(1)
+    confirmation = input("Type: (Confirm) if you would like to confirm your order")
+    backtomenu = input("Type: (Back) if you would like to go back to the menu")
+
+    if confirmation == "Confirm":
+        print("Your order has been confirmed!")
+        print("Your order will be delivered in 30 minutes!")
+    elif backtomenu == "Back":
+        print("Going back to the menu...")
+        time.sleep(1)
+        menu_search = input(f"What would you like to order?: ({', '.join(menu)} ) ")
+        if menu_search == 'shawarma':
+            print("Great choice!")
+            time.sleep(1)
+            print(f"Your order would be: {shawarma[1]}$")
+            time.sleep(1)
+            confirmation = input("Type: (Confirm) if you would like to confirm your order")
+            backtomenu = input("Type: (Back) if you would like to go back to the menu")
+            if confirmation == "Confirm":
+                print("Your order has been confirmed!")
+                print("Your order will be delivered in 30 minutes!")
+            elif backtomenu == "Back":
+                print("Going back to the menu...")
+                time.sleep(1)
+                menu_search = input(f"What would you like to order?: ({', '.join(menu)}) ")
+                if menu_search == 'burger':
+                    print("Great choice!")
+                    time.sleep(1)
+                    print(f"Your order would be: {burger[1]}$")
+                    time.sleep(1)
+                    confirmation = input("Type: (Confirm) if you would like to confirm your order")
+                    backtomenu = input("Type: (Back) if you would like to go back to the menu")
+                    if confirmation == "Confirm":
+                        print("Your order has been confirmed!")
+                        print("Your order will be delivered in 30 minutes!")
+                    elif backtomenu == "Back":
+                        print("Going back to the menu...")
+                        time.sleep(1)
+                        menu_search = input(f"What would you like to order?: ({', '.join(menu)} ) ")"""
+                        
+#  upgraded version of the little project
     
+# import time
+
+# menu = {
+#     'pizza': 22,
+#     'shawarma': 12,
+#     'burger': 15
+# }
+
+# while True:
+#     menu_search = input(f"What would you like to order?: ").strip().lower()
+
+#     if menu_search not in menu:
+#         print(f"{menu_search} is an invalid order... try again")
+#         continue
+
+#     print(f"Your order will be {menu_search} ${menu[menu_search]} ")
+#     confirmation = input("Type (Confirm) to confirm or (Back) to go back to the menu: ").strip().lower()
+
+#     if confirmation == "confirm":
+#         print("Your order will be delivered in 21 minutes!")
+#         break
+
+#     elif confirmation == "back":
+#         print("Going back to the menu...")
+#         continue
+    
+#     else:
+#         print(f"{confirmation} is not a valid input")
+
+
+
+
+# conditional expressions:
+
+# user_role = "admin"
+# access_level = "Full access" if user_role == "admin" else "Limited Access"
+
+# print(access_level)
+
+
+# loops
+
+# name = input("What's your name?: ")
+
+# while name == "":
+#     print("Invalid.")
+#     name = input("What's your name?: ")
+
+# zesty = True
+# print(f"Is the person zesty?: {zesty}")
+# while zesty:
+#     print("NO!")
+#     zesty = False
+
+# print(f"Is the person zesty?: {zesty}")
+
+# food = ["spaghetti", "shawarma", "burger"]
+# for i in food:
+#     print("-".join(i))
+
+# sets 
+
+# p1blngs = {"phone", "car", "pen", "perfume", "glasses"}
+# p2blngs = {"house", "car", "phone", "personal computer", "bed"}
+
+
+# print("Person 2 doesn't have:", ", ".join(p1blngs.difference(p2blngs)))
+
+
+
+
