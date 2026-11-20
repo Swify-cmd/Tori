@@ -320,5 +320,259 @@ if menu_search == 'pizza':
 # print("Person 2 doesn't have:", ", ".join(p1blngs.difference(p2blngs)))
 
 
+# phone number book by name mini project
+
+# phone_dict = {
+#     "Amal":1111111111,
+#     "Mohammed":2222222222,
+#     "Khadijah":3333333333,
+#     "Abdullah":4444444444,
+#     "Rawan":5555555555,
+#     "Faisal":6666666666,
+#     "Layla":7777777777
+# }
+
+# search = ""
+
+# while len(search) != 10 or not search.isdigit():
+#     search = input("Enter the number/name: ")
+    
+#     if search in phone_dict:
+#         print(phone_dict[search])
+#         break
+#     else:
+#         print("The number/name is invalid.")
+#         continue
+
+# keyword arguments
+
+# def info(fname, lname, age):
+#     print(f"Hello {fname} {lname}")
+#     print(f"You are {age} years old!")
+
+# info(fname="Meow", age=19, lname="Cater")
+
+# import random 
+
+# x = random.randint(1,6)
+# y = random.random()
+
+# my_list = ['rock','paper','scissors']
+# z = random.choice(my_list)
+
+# cards = [1,2,3,4,5,6,7,8,9,10,"J","Q","K","A"]
+
+# random.shuffle(cards)
+# print(cards)
+
+# Exceptions
+# try:
+#     numerator = int(input("Enter a number to divide: "))
+#     denominator = int(input("Enter a number to divide by: ")) # divide by zero to get the error
+#     result = numerator / denominator
+    
+# except ZeroDivisionError:
+#     print("You can't divide by zero baka!")
+# except ValueError as e:
+#     print(e)
+#     print("Use numbers only please")
+# except Exception:
+#     print("Something went wrong.")
+# else:
+#     print(result)
+# finally:
+#     print("I always get executed :<")
+
+# File detection
+
+# import os
+
+# path = "C:\\Users\\ahmed\\Desktop\\text.txt"
+# path2 = "C:\\Users\\ahmed\\Desktop\\Shimiji"
+# if os.path.exists(path):
+#     print("That location exists!")
+#     if os.path.isfile(path):
+#         print("That is a file")
+#     elif os.path.isdir(path):
+#         print("That is a directory")
+# else:
+#     print("That location doesn't exist")
+
+# try:
+#     with open("C:\\Users\\ahmed\\Desktop\\text.txt") as file:
+#         print(file.read())
+# except FileNotFoundError:
+#     print("File not found.")
 
 
+# text = "yooo\nthis is some text yall been waiting for\nhave a good day chat"
+# text = "This text have been overridden\nidk if i wrote that right"
+# with open('test1.txt', 'w') as file: #to write
+#     file.write(text)
+
+# text = "\nand also me i am being written!"
+# with open('test1.txt', 'a') as file: #to append
+#     file.write(text)
+
+# import shutil 
+
+# copyfile() = copies the contents of a file
+# copy() = copyfile() + permission mode + destination can be a directory
+# copy2() = copy() + copies metadata (file's creation and modifiation time)
+
+#                                                            #original file here                                    #copied file here
+# shutil.copyfile("C:\\Users\\ahmed\\Documents\\.Study\\.Python\\test1.txt","C:\\Users\\ahmed\\Documents\\.Study\\.Python\\copy.txt") #src, dst
+
+# shutil.copy("C:\\Users\\ahmed\\Documents\\.Study\\.Python\\test1.txt","C:\\Users\\ahmed\\Documents\\.Study\\.Python\\copy2.txt") #src, dst
+# shutil.copy2("C:\\Users\\ahmed\\Documents\\.Study\\.Python\\test1.txt","C:\\Users\\ahmed\\Documents\\.Study\\.Python\\copy3.txt") #src, dst
+
+
+# import os
+
+# source = "C:\\Users\\ahmed\\Desktop\\text1.txt" 
+# destination = "C:\\Users\\ahmed\\Documents\\.Study\\.Python\\test1.txt"
+
+# try:
+#     if os.path.exists(destination):
+#         print("There is already a file there!")
+#     else:
+#         os.replace(source, destination)
+#         print(f"{source} was moved")
+
+# except FileNotFoundError:
+#     print(f"{source} was not found.")
+
+
+# import os
+# import shutil
+
+# path = "copy.txt"
+# path2 = "emptyfolder"
+# try:
+#     #os.remove(path)
+#     #os.rmdir(path2) #rmdir = remove directory
+#     shutil.rmtree(path2) #dangerous, can delete a folder with its contents
+# except FileNotFoundError:
+#     print("This file was not found")
+# except PermissionError:
+#     print("You do not have permission to delete that")
+# except OSError:
+#     print("You cannot delete this folder using this function")
+# else:
+#     print(f"{path2} was deleted")
+
+
+# import new_message # calling a module(a python file containing blocks of code such as functions)
+
+# new_message.hello()
+# new_message.bye()
+
+# import new_message as msg # alias to a module
+# from new_message import hello,bye # calling specific functions from a module instead of the whole module
+
+# msg.hello()
+# msg.bye()
+
+# hello()
+# bye()
+
+# help("modules")
+
+# OOP
+
+# from car import Car
+
+# car_1 = Car("Chevy", "Corvette", "2021", "Blue")
+
+# print(car_1.make)
+# print(car_1.model)
+# print(car_1.year)
+# print(car_1.color)
+
+# car_1.drive()
+# car_1.stop()
+
+# Inheritance
+
+# class Animal:
+
+#     alive = True
+
+#     def eat(self):
+#         print("This animal is eating...")
+
+#     def sleep(self):
+#         print("This animal is asleep zzz")
+    
+# class Rabbit(Animal):
+#     def run(self):
+#         print("This rabbit is running...")
+# class Fish(Animal):
+#     def swim(self):
+#         print("This fish is swimming...")
+# class Hawk(Animal):
+#     def fly(self):
+#         print("This hawk is flying...")
+
+# rabbit = Rabbit()
+# fish = Fish()
+# hawk = Hawk()
+
+# print(rabbit.alive)
+# fish.eat()
+# hawk.sleep()
+
+# rabbit.run()
+# fish.swim()
+# hawk.fly()
+
+
+# multilevel inheritance
+
+# class Organism:
+
+#     alive = True
+
+# class Animal(Organism): # inherits Organism's attributes and methods
+
+#     def eat(self):
+#         print("This animal is eating")
+
+# class Dog(Animal): # inherits Animal's attributes and methods
+    
+#     def bark(self):
+#         print("This dog is barking")
+
+# dog = Dog()
+# print(dog.alive)
+# dog.eat()
+# dog.bark()
+
+
+# multiple inheritance = when a child class is derived from more than one parent
+
+# class Prey:
+#     def flee(self):
+#         print("This animal flees")
+
+# class Predator:
+#     def hunt(self):
+#         print("This animal hunts")
+
+# class Rabbit(Prey):
+#     pass
+
+# class Hawk(Predator):
+#     pass
+
+# class Fish(Prey, Predator):
+#     pass
+
+# rabbit = Rabbit()
+# hawk = Hawk()
+# fish = Fish()
+
+# rabbit.flee()
+# hawk.hunt()
+# fish.flee()
+# fish.hunt()
